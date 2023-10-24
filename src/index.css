@@ -36,3 +36,35 @@
     align-items: center;
 
 }
+
+
+.post{
+    border: 2px solid red;
+}
+
+.NewPost{
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+}
+
+.newPostForm{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin: 20px;
+}
+
+.newpost-submit{
+    background-color: blue;
+    color: white;
+    font-style: bold;
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: antiquewhite;
+    border: 2px solid blue;
+}

@@ -1,12 +1,13 @@
-import React from 'react'
-import { useParams } from 'react-router-dom'
 
-const Post = () => {
-    const {id} = useParams()
-    const obj = useParams() //returns object of properties
-    console.log(useParams())
+const Post = ({ post }) => {
   return (
-    <div>Post {obj.id}</div>
+    <article className="post">
+      <h2>{post.title}</h2>
+      <p className="postDate">{post.datetime}</p>
+      <p className="postBody">{
+        (post.body).length <= 25 ? post.body : `${(post.body).slice(0, 25)}...`
+      }</p>
+    </article>
   )
 }
 
